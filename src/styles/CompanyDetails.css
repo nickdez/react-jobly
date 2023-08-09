@@ -1,0 +1,15 @@
+.CompanyDetail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.company-container {
+    margin-top: 2em;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 40em;
+    text-align: center;
+}

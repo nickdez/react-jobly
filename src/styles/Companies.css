@@ -1,0 +1,35 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    flex-direction: row;
+}
+
+.search-bar {
+    height:2.6em;
+    width: 40%;
+    font-size: 1em;
+}
+
+.submit-btn {
+    border: 1px solid rgb(110, 145, 252);
+    border-radius: 10px;
+    background-color:rgb(110, 145, 252);
+    color: white;
+    font-weight: bolder;
+    padding: .5em;
+    pointer-events: visible;
+}
+
+.job-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}

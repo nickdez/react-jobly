@@ -1,0 +1,44 @@
+.form-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    margin-top: 2em;
+   
+}
+
+.login-form, .signup-form, .profile-form {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 4em;
+    background-color: aliceblue;
+}
+
+
+.form-element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-label {
+    flex: 2;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-input {
+    flex: 2;
+    padding: 5px;
+    background-color: white!important;
+}
+
+.form-button {
+    position: relative;
+    top: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+}

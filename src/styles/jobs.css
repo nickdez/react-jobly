@@ -1,0 +1,25 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.search-bar {
+    height:2.6em;
+    width: 40%;
+    font-size: 1em;
+}
+
+button {
+    height: 3.6em;
+    width: 6em;
+}
+
+.company-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+

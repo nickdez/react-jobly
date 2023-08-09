@@ -1,0 +1,25 @@
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.nav-link {
+    margin: 5px;
+    margin-right: 1em;
+}
+
+.nav-link-home {
+    position: absolute;
+    left: 1em;
+    
+}
+
+.nav-link, .nav-link-home {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: blue;
+    
+}
