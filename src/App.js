@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 import JoblyRoutes from "./Routes";
 import { BrowserRouter as Router } from "react-router-dom";
-import { AuthContext } from './authContext';
+import AuthContext from "./authContext";
 import JoblyApi from './api';
 
 
@@ -11,7 +11,7 @@ export const TOKEN_STORAGE_ID = "jobly-token";
 function App() {
   const initialToken = localStorage.getItem(TOKEN_STORAGE_ID);
   const [token, setToken] = useState(initialToken);
-  const [currentUser, setCurrentUser] = useState({});
+  const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
     if (token) {
@@ -71,7 +71,7 @@ function App() {
     <div className="App">
       <Router>
         <AuthContext.Provider value={{ currentUser, updateUser, login, signup, logout }}>
-          <NavBar />
+          <NavBar logout={logout} />
           <JoblyRoutes />
         </AuthContext.Provider>
       </Router>

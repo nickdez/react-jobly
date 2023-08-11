@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import JobCard from './JobCard';
 import JoblyApi from "./api";
 import './styles/jobs.css'
-import { AuthContext } from "./authContext";
+import AuthContext from "./authContext";
 
 function Jobs() {
     const [jobs, setJobs] = useState([]);

@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
-import { AuthContext } from './authContext';
+import { useNavigate } from 'react-router-dom';
+import AuthContext from "./authContext";
 import './styles/forms.css'
 
 function Signup() {
@@ -10,6 +11,8 @@ function Signup() {
         firstName: '',
         lastName: ''
     });
+    const navigate = useNavigate();
+
     const { signup } = useContext(AuthContext);
 
     const handleChange = e => {
@@ -19,6 +22,7 @@ function Signup() {
     const handleSubmit = e => {
         e.preventDefault();
         signup(formData);
+        navigate('/');
     };
 
     return (

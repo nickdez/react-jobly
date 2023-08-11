@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { AuthContext } from './authContext';
+import AuthContext from "./authContext";
 import { Navigate } from "react-router-dom";
 import JoblyApi from "./api";
 
@@ -8,10 +8,10 @@ function Profile() {
     const { currentUser, updateUser } = useContext(AuthContext);
     const [error, setError] = useState(null);
     const [formData, setFormData] = useState({
-        username: currentUser.username || '',
-        firstName: currentUser.firstName || '',
-        lastName: currentUser.lastName || '',
-        email: currentUser.email || '',
+        username: "",
+        firstName: "",
+        lastName: "",
+        email: "",
         password: ''
     });
 
@@ -53,6 +53,8 @@ function Profile() {
         return <Navigate to="/" />;
     }
 
+    console.log(currentUser);
+
 
 
     return (
@@ -66,8 +68,8 @@ function Profile() {
                         <input className="form-input"
                             name="username"
                             value={formData.username}
-                            id="username"
-                            onChange={handleChange} />
+                            id="profile-username"
+                            onChange={handleChange} readOnly />
                     </div>
                     <div className="form-element">
                         <label className="form-label" htmlFor="firstName">First name:</label>

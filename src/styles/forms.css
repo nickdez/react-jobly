@@ -33,7 +33,7 @@
 .form-input {
     flex: 2;
     padding: 5px;
-    background-color: white!important;
+    background-color: white;
 }
 
 .form-button {
@@ -41,4 +41,8 @@
     top: 1em;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+#profile-username {
+    background-color: lightgrey;
 }

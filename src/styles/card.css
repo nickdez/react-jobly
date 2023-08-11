@@ -27,6 +27,7 @@
     color: white;
     font-weight: bolder;
     padding: .5em;
+    pointer-events: none;
 }
 
 :hover.apply-btn {
